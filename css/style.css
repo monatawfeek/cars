@@ -1,0 +1,756 @@
+/* =============================================General=========================================== */
+*{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ .container{
+    width:95%;
+    margin:auto;
+    /* border:blue solid 1px */
+} 
+.mg{
+margin:60px 0;
+}
+
+header i{
+    margin-left: 5px;
+    font-size:11px;
+}
+::selection{
+    background-color: crimson;
+    color: #fff;
+  }
+/* ====
+=========header before&after============== */
+  .title{
+      text-align: center;
+      position: relative;
+      line-height: 1.5;
+  }
+  section.title h1{
+   font-size:35px;
+}
+  .title .line:after{
+      content:'';
+      width:50px;
+      height: 1px;
+      background: #db2d2e;
+      display: block;
+      margin:10px auto;
+      transition:width .8s ;
+  }
+  .title .line:before{
+    content:'';
+    width:100px;
+    height:1px;
+    background: #db2d2e;
+    /* display: block; */
+    position: absolute;
+    bottom:5px ;
+    left:50%;
+    transform: translate(-50%,10px);
+    transition:width .8s ;
+  }
+.title:hover .line:after{
+    width:100px;
+}
+.title:hover .line:before{
+    width:50px;
+}
+/* =============================================walk-car=========================================== */
+.walk-car{
+    position:fixed; 
+    bottom:20px;
+    right:20px;
+    z-index:1;
+}
+/* ===========================================1=Header=========================================== */
+.big-header{
+    position: relative;
+    width:100%;
+    height:700px;
+    background:url(../images/bg.jpg)  center ;
+}
+   .big-header .image img{
+    width: 100%;
+    height:100%;
+    } 
+
+    .big-header .image{
+        position: absolute;
+        bottom: 0;
+      width:100%;
+    }
+.header{
+    height:80px;
+    display: flex;
+    justify-content:space-between;
+    width:90%;  
+    margin: auto;
+}
+.logo img{
+    height:26px;
+}
+/* =============media======bars================= */
+div.bars{
+    display: none;
+}
+header div.bars i{
+    font-size:30px;
+}
+/* ===================nav================= */
+ul.nav{
+    display: flex;
+}
+
+header a{
+    padding:40px 10px;
+    color:#fff;
+    display: block;
+    font-size:12px;
+    text-transform: uppercase;
+    letter-spacing:1px;
+    
+}
+.active{
+    color: #db2d2e;
+}
+/* ==============drop down menu1========== */
+li.main{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    width:200px;
+    background:#fff;
+    border-top: 5px solid rgb(189, 29, 29);
+   opacity: 0;
+   visibility: hidden;
+    
+}
+.sub a{
+    color:black;
+    padding: 15px; 
+    border-bottom: 1px solid rgb(236, 234, 234);
+}
+li:hover .sub{
+  opacity: 1;
+  visibility: visible;
+}
+/* ==============drop down menu2============ */
+div.flex{
+    display: flex;
+  
+}
+div.sub{
+    width:600px;
+    padding:20px;
+}
+/* ===========================================2==NEW=========================================== */
+.new{
+    display: flex;
+    justify-content: space-between;
+}
+.new1 {
+    width:calc(95%/4);
+    position: relative;
+    height:250px;
+}
+/* ==============div===new-image=========== */
+.new-image{
+    width: 100%;
+     height: 100%;
+ }
+ .new-image img{
+     width: 100%;
+     height: 100%;
+ }
+/* ==============div==one========== */
+.one{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background: rgb(238, 237, 237);
+    padding-top:20px;
+}
+.one p{
+    text-align: center;
+    letter-spacing:1px;
+    padding:15px 0;
+}
+.new1 .one i{
+    color:red;
+    font-size: 38px;
+}
+
+
+/* ==============link===hover=========a========= */
+  .one .link{
+      width:fit-content;
+    position: relative;
+    width: 100%;
+    display: flex;
+} 
+.link a{
+    color: black;
+    z-index: 2;
+    margin: auto;
+    text-transform: capitalize;
+    padding: 5% 65px;
+
+}
+.one .link::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:0;
+    transition: all 0.5s;
+    background:rgb(190, 45, 45);
+    bottom: 0px;
+    left: 0px;
+}
+.one:hover .link::after{
+    height: 100%;
+
+}
+.one:hover *{
+color: white !important;
+}
+.one:hover  {
+    background: rgba(34, 33, 33, 0.5);
+}
+/* ========================================3==welcome Car Dealer=============bg2======================== */
+.welcome{
+    background:url(../images/bg2.jpg)  ;
+   background-size:cover ;
+   /* background-position: -10px; */
+    width: 100%;
+    height:600px;
+}
+.bg2{
+    display: flex;
+    justify-content: space-between;
+    }
+.bg2 >div{
+    width:47%;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.welcome-one div:first-of-type p{
+    font-style: italic;
+    margin:15px 0;
+}
+.welcome-one div:nth-of-type(2) strong{
+    color: #db2d2e;
+    display:inline-block;
+}
+/* =========================ul================================== */
+.welcome-four-items{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    text-align: center;
+}
+.welcome-four-items li{
+    width: calc(95%/2);
+    padding:20px 0;
+}
+.welcome-four-items li b{
+    font-size:35px;
+    color: crimson;
+}
+.welcome-four-items li i{
+    font-size:29px;
+}
+.welcome-four-items li p{
+    font-size:12px;
+    margin-bottom: 20px;
+}
+.welcome-four-items li:first-child{
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+}
+.welcome-four-items li:nth-child(2){
+    border-bottom: 1px solid gainsboro;
+}
+.welcome-four-items li:nth-child(3){
+border-right: 1px solid gainsboro;
+}
+/* ========================================4==feature car===================================== */
+.car-items{
+    display: flex;
+    justify-content:space-between; 
+    overflow:auto;
+}
+.item{
+    width:calc(95%/4);
+    /* display: inline-block; */
+    flex-shrink:0;
+}
+.item:not(:last-child){
+    margin-right:calc(5%/3);
+}
+/* ================image======================== */
+.item-image {
+    width:100%;
+}
+.item-image img{
+    width: 100%;
+    display: block;
+}
+/* ================overlay======================== */
+.relative{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay{
+    text-align: center;
+    background: rgba(128, 3, 28,0.7);
+    position: absolute;
+     top:0; 
+     left: 0;
+     width:100%;
+     transition:all .5s ;
+     height: 0%;
+     opacity: 0;
+}
+.overlay-contents ul li{
+    display: inline-block;
+}  
+.overlay-contents{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.item:hover .overlay{
+    height: 80%;
+    opacity: 1;
+}
+.overlay-contents i{
+    color: #fff;
+    font-size:15px;
+    border:2px solid #fff;
+    border-radius: 20px;
+    padding: 10px;
+}
+.overlay-contents a:hover i{
+    background:#fff;
+    color: crimson;
+}
+/* ================car-list======================== */
+.car-list{
+    text-align: center;
+    font-size:14px;
+    color:#807777;
+    background: #fff;
+    height: 20%;
+    width: 100%;
+    transition: .3s ease-in-out;
+    position: absolute;
+    bottom:-25px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.car-list ul li{
+    display: inline-block;
+    margin:0 2px;
+}
+.car-list ul li:nth-of-type(3) i{
+    font-size:16px;
+}
+.item:hover .car-list{
+     bottom:0;
+    opacity: 1;
+}
+/* ================top-star======================== */
+.top-star{
+    background: #f6f6f6;
+    padding:20px 0;
+}
+.star{
+    text-align: center;
+    color:#807777;
+    margin-bottom: 5px;
+}
+/* ================link2 with underline=================== */
+.title .link2{
+    color: crimson;
+}
+.title .link2:after{
+    width:25px;
+    background: #000;
+}
+.title .link2:before{
+    width:50px;
+    background: #000;
+}
+.item:hover .link2:after{
+    width:50px;
+    background:red;
+}
+.item:hover .link2:before{
+    width:25px;
+    background:red;
+}
+/* ================price======================== */
+.price{
+    text-align: center;
+    margin-top: 30px;
+}
+.price .line-through{
+    text-decoration: line-through;
+    color:#807777;
+    margin-right:8px;
+}
+.price span:nth-of-type(2){
+    font-weight: bold;
+}
+ /* =========================================5==Our Testimonial===============================  */
+ /* ================background======================== */
+ .our-test{
+     width:100%;
+     height:670px;
+     background: url(../images/bg3.jpg) center ;
+     background-attachment: fixed;
+     background-size:cover;
+     position: relative;
+  
+ }
+ /* ================overlay======================== */
+ .overlay2{
+     background: rgba(10, 10, 10,.7);
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+ }
+ /* ================title======================== */
+ .title.color{
+color:#fff;
+ }
+ /* ================all-shape======================== */
+ /* ================shape-desc======================== */
+ /* .parent{
+     display: flex;
+     justify-content: center;
+     overflow: hidden;
+ } */
+ .all-shape{
+     margin: auto;
+     width:60%;
+     animation: pic 1s infinite;
+ }
+ .shape-desc{
+    background: #db2d2e;
+    color: #fff;
+    padding:35px ;
+    line-height: 1.5;
+    display: flex;
+    position: relative;
+ }
+ .shape-desc i{
+    font-size:50px;
+    margin-right:20px;
+ }
+ .shape-desc:before{
+     content: '';
+     border-style: solid;
+     border-width: 20px  20px 0 0;
+     border-color: #db2d2e transparent  transparent    transparent;
+     position: absolute;
+    bottom:-20px;
+    left:50px;
+ }
+  /* ================image======================== */
+  .all-shape .image{
+      display: flex;
+      margin-top:80px;
+      
+  }
+ .all-shape .image img{
+ width:100px;
+ height: 100px;
+ border-radius: 50%;
+ }
+ .image-desc {
+     color: #fff;
+     display: flex;
+     font-size: 18px;
+     margin-top: 35px;
+     margin-left: 15px;
+ }
+ .image-desc span{
+    color:#807777;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-top:3px;
+ }
+  /* ================button======================== */
+  .button{
+      margin: auto;
+      width:100px;
+      margin-top: 50px;
+    
+  }
+  .button ul li{
+      display: inline-block;
+  }
+  .button ul li a{
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius:50%;
+      background:#a5a5a5;
+      transition: .5s;
+  }
+  .button li:hover a{
+      width:20px;
+      border-radius:5px;
+      background: crimson;
+  }
+  /* =========================================6==why choose us================================  */
+.choose-eight {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+height:500px;
+
+}
+.choose-eight div{
+    width: calc(95%/4);
+    text-align: center;
+}
+.choose-eight div h6{
+    font-size: 16px;
+}
+.choose-eight div h6::after{
+    content: '';
+    width: 25px;
+    height:2px;
+    background: #db2d2e;
+    display: block;
+    margin:10px  auto;
+}
+.choose-eight div i{
+    font-size: 18px;
+    width: 60px;
+    height:60px;
+    line-height: 60px;
+    border-radius: 30px;
+    background: #eceaea;
+    transition: 1s;
+    margin-bottom: 10px;
+}
+.choose-eight div:hover i{
+    background: #db2d2e;
+    color: #fff;
+}
+/* =========================================7==company-name================================  */
+.company-name{
+    background: #f6f6f6;
+}
+.company-name-pic{
+    overflow: hidden;
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.company-name-pic div {
+    width:150px;
+}
+
+
+
+/* ===========================================footer================================  */
+.footer{
+  background: #000;
+  /* height:900px; */
+  color:rgba(255, 255, 255, 0.644);
+  padding-top:60px;
+  font-size: 14px;
+}
+.columns{
+    display: flex;
+    justify-content: space-between;
+}
+.footer i{
+    color:rgba(255, 255, 255, 0.644);
+}
+/* ===========================================footer======first-column==========================  */
+.columns>div{
+    width:calc(98%/4);
+}
+.first-column img{
+    width:250px;
+}
+.first-column p{
+    line-height: 1.3;
+    margin:20px 0;
+}
+.first-column ul li{
+    text-align: center;
+    display: inline-block;
+    background: rgb(19, 18, 18);
+    transition: .5s;
+}
+.first-column ul li a{
+    padding:10px;
+    display: inline-block;
+}
+.first-column ul li i{
+    font-size: 15px;
+}
+.first-column ul li:hover{
+    background: rgb(207, 34, 34);
+    color:#fff;
+}
+/* ===========================================footer======second-column==========================  */
+.columns h6{
+    font-size: 16px;
+    margin-bottom:47px;
+    color:#fff;
+}
+.second-column a{
+    display: block;
+    color:rgba(255, 255, 255, 0.644);
+    margin-bottom:20px;
+}
+.second-column a i{
+    margin-right:8px;
+}
+/* ===========================================footer======fourth-column==========================  */
+.fourth-column li{
+    margin-bottom: 20px;
+}
+.fourth-column li i{
+    margin-right: 8px;
+}
+.fourth-column li:nth-child(2) i{
+transform:rotatey(180deg);
+}
+.fourth-column li:nth-child(3) i{
+    font-size:18px;
+}
+/* ==============form=============== */
+.form{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+ .form input{
+     width: 80%;
+    padding:15px;
+    background: #000;
+    border:1px solid rgb(39, 38, 38);
+}
+.form button{
+    width: 20%;
+    display: inline-block;
+    padding: 13px 10px;
+    background: crimson;
+    margin-left: -5px;
+    border:1px solid transparent;
+    cursor: pointer;
+    text-align: center;
+}
+.form button i{
+    font-size:18px;
+    color: #fff;
+    transition: .5s;
+}
+button:hover i{
+    color: #000;
+}
+input:focus{
+    background: #fff;
+   outline:1px solid rgb(189, 29, 29);
+   border: none;
+}
+/* ===========================================footer======second-row==========================  */
+.second-row{
+    display: flex;
+    justify-content: space-between;
+}
+.second-row-first{
+    background: rgb(19, 18, 18);
+    width:calc(98%/2);
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-row-first .looking{
+    width:71%;
+}
+.looking h6{
+   color: #fff;
+   font-size: 16px;
+   margin-bottom:15px;
+}
+
+/* =====================================button-hover============================= */
+ .second-row-link{
+     width:fit-content;
+    background: rgb(92, 86, 86);
+    position: relative;
+    display: flex;
+} 
+.second-row-link a{
+    padding: 10px 20px; 
+    color: #fff;
+    text-transform:capitalize;
+    z-index: 2;
+   
+}
+.second-row-link:after{
+    content: '';
+    background: crimson;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: .5s;
+}
+.second-row-link:hover:after{
+   height: 0;
+}
+/* ===========================================last-footer========================================  */
+.last-footer{
+    background: rgb(19, 18, 18);
+    padding: 35px 0;
+}
+.last-footer-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.last-footer-first a{
+    color:crimson;
+}
+.last-footer div:nth-child(2) ul li {
+display: inline-block;
+}
+.last-footer div:nth-child(2) ul li a{
+color:rgba(255, 255, 255, 0.644) ;
+margin:0 5px;
+}

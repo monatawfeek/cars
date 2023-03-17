@@ -1,0 +1,202 @@
+
+@media only screen and (max-width:991px){
+/* =============================================Header=========================================== */
+.big-header{
+    height:500px;
+    }
+.header{
+    width:100%;
+    align-items: center;
+    padding:0 25px;
+}
+header ul.nav{
+       display: none;
+    }
+header div.bars {
+    color: #fff;
+    display: block;
+}
+header{
+ background: rgb(29, 28, 28);
+}
+
+   .big-header .image img{
+    object-fit: scale-down;
+   }
+
+/* =============================================NEW=========================================== */
+.new{
+    flex-wrap: wrap;
+}
+.new1 {
+    width:calc(95%/2);
+}
+.new div:first-child,
+.new div:nth-child(2){
+    margin-bottom:20px;
+}
+/* ==========================================welcome Car Dealer===================================== */
+.bg2{
+    flex-wrap: wrap;
+}
+.bg2 >div{
+    width:100%;
+}
+/* =========================ul================================== */
+.bg2>div:nth-child(2){
+    background:#fff;
+    margin-top:120px;
+ } 
+ .welcome-four-items li{
+    padding: 0;
+}
+/* =========================================5==Our Testimonial===============================  */
+/* ================all-shape======================== */
+.all-shape{
+    width:90%;
+}
+ /* =========================================6==why choose us================================  */
+ .choose-eight {
+    height:fit-content;
+ }
+ .choose-eight div{
+    width: calc(95%/2);
+    margin-bottom:40px;
+}
+/* ===========================================footer======first-column==========================  */
+.columns{
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.columns>div{
+    width:50%;
+}
+.fourth-column {
+    margin: 20px 0 ;
+}
+ .form input{
+    width: 90%;
+}
+.form button{
+    width: 10%;
+}
+/* ===========================================footer======second-row==========================  */
+.second-row{
+    flex-wrap: wrap;
+}
+.second-row-first{
+    margin:0 0 30px;
+    width:100%;
+}
+/* ===========================================last-footer========================================  */
+/* .last-footer{
+    background: rgb(19, 18, 18);
+    padding: 35px 0;
+} */
+.last-footer-flex{
+    text-align: center;
+    line-height: 2.5;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+@media only screen and (max-width:979px){
+ /* ==========================================feature car===================================== */
+ .item{
+    width:calc(95%/2);
+}
+
+/* =========================================7==company-name================================  */
+
+
+}
+
+@media only screen and (max-width:767px){
+/* =============================================NEW=========================================== */
+.new1 {
+    width:100%;
+}
+.new1:not(:last-child)
+{
+    margin-bottom:20px;
+}
+/* ==========================================feature car===================================== */
+.item{
+    width:100%;
+}
+/* =========================================6==why choose us================================  */
+ .choose-eight div{
+    width:100%;
+    /* margin-bottom:40px; */
+}
+/* ===========================================footer======first-column==========================  */
+.first-column{
+    margin-bottom: 20px;
+}
+.columns>div{
+    width:100%;
+    margin-top: 20px;
+}
+
+ .form input{
+    width: 95%;
+}
+.form button{
+    width:8%;
+}
+
+}
+
+
+@media only screen and (max-width:479px){
+/* ========================================3==welcome Car Dealer===================================== */
+/* =========================ul================================== */
+.welcome{
+    height:680px;
+}
+.bg2>div:nth-child(2){
+  line-height: 1;
+    margin-top:0;
+ } 
+.welcome-four-items{
+    background:#fff;
+ } 
+.welcome-four-items li{
+    width:100%;
+    padding:9px ;
+}
+.welcome-four-items li:first-child{
+    
+    border:none;
+}
+.welcome-four-items li:nth-child(2){
+    border:none;
+}
+.welcome-four-items li:nth-child(3){
+    border:none;
+}
+
+}
+/* =========================================5==Our Testimonial===============================  */
+ /* ================background======================== */
+ .our-test{
+    height:800px;
+ }
+ /* ===========================================footer======second-row==========================  */
+
+.second-row-first{
+    flex-wrap: wrap;
+}
+.second-row-first .looking{
+    width: 100%;
+    margin-bottom: 30px;
+}
+}
+@media only screen and (max-width:450px){
+    /* =============================================Header=========================================== */
+    .big-header{
+        height:300px;
+        }
+    }
